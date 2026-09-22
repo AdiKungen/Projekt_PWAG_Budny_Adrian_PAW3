@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "vue-projekt-b100c"
+  },
+  "targets": {
+    "vue-projekt-b100c": {
+      "hosting": {
+        "system-inwentarz": [
+          "system-inwentarz"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
