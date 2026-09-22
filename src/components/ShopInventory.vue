@@ -25,19 +25,19 @@
         <table class="table table-dark table-hover align-middle">
           <thead>
             <tr>
-              <th>Kategoria</th>
-              <th>Nazwa</th>
-              <th>Model</th>
-              <th>Cena</th>
-              <th>Ilość</th>
-              <th>Wartość</th>
-              <th>Źródło</th>
-              <th>Status</th>
-              <th>Informacja</th>
-              <th v-if="isAdmin">Zmodyfikowane przez</th>
-              <th v-if="isAdmin">Data modyfikacji</th>
-              <th v-if="isAdmin">Faktura</th>
-              <th v-if="isAdmin">Akcje</th>
+              <th style="min-width: 140px;">Kategoria</th>
+              <th style="min-width: 150px;">Nazwa</th>
+              <th style="min-width: 160px;">Model</th>
+              <th class="text-end text-nowrap">Cena</th>
+              <th class="text-center text-nowrap">Ilość</th>
+              <th class="text-end text-nowrap">Wartość</th>
+              <th style="min-width: 130px;">Źródło</th>
+              <th class="text-center text-nowrap">Status</th>
+              <th style="min-width: 180px;">Informacja</th>
+              <th v-if="isAdmin" class="text-nowrap">Zmodyfikowane przez</th>
+              <th v-if="isAdmin" class="text-nowrap">Data modyfikacji</th>
+              <th v-if="isAdmin" class="text-center text-nowrap">Faktura</th>
+              <th v-if="isAdmin" class="text-center text-nowrap">Akcje</th>
             </tr>
           </thead>
           <tbody class="table-group-divider" style="border-top-color: white">
@@ -45,29 +45,29 @@
               <td>{{ item.category }}</td>
               <td><strong>{{ item.name }}</strong></td>
               <td>{{ item.model }}</td>
-              <td>{{ item.price }} zł</td>
-              <td>{{ item.quantity }}</td>
-              <td>{{ (item.price * item.quantity).toFixed(2) }} zł</td>
+              <td class="text-end text-nowrap">{{ Number(item.price).toFixed(2) }} zł</td>
+              <td class="text-center text-nowrap">{{ item.quantity }} szt.</td>
+              <td class="text-end text-nowrap fw-bold">{{ (item.price * item.quantity).toFixed(2) }} zł</td>
               <td>{{ item.source }}</td>
-              <td>
+              <td class="text-center text-nowrap">
                 <span :class="getStatusBadgeClass(item.status)">{{ item.status }}</span>
               </td>
               <td>{{ item.info }}</td>
-              <td v-if="isAdmin"><small>{{ item.modifiedBy }}</small></td>
-              <td v-if="isAdmin"><small>{{ formatDate(item.modifiedAt) }}</small></td>
-              <td v-if="isAdmin">
+              <td v-if="isAdmin" class="text-nowrap"><small>{{ item.modifiedBy }}</small></td>
+              <td v-if="isAdmin" class="text-nowrap"><small>{{ formatDate(item.modifiedAt) }}</small></td>
+              <td v-if="isAdmin" class="text-center text-nowrap">
                 <a 
                   v-if="getInvoiceUrl(item.invoiceURL)" 
                   :href="getInvoiceUrl(item.invoiceURL)" 
                   target="_blank" 
                   rel="noopener noreferrer" 
-                  class="btn btn-outline-info btn-sm"
+                  class="btn btn-outline-info btn-sm text-nowrap"
                 >
                   Otwórz 📄
                 </a>
-                <span v-else class="text-muted">—</span>
+                <span v-else class="text-white-50">—</span>
               </td>
-              <td v-if="isAdmin">
+              <td v-if="isAdmin" class="text-center text-nowrap">
                 <div class="btn-group btn-group-sm">
                   <router-link :to="{ name: 'EditItem', params: { id: item.id } }" class="btn btn-warning">
                     Edytuj
@@ -99,7 +99,7 @@
 </template>
 
 <script>
-import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore';
+import { collection, getDocs, doc, deleteDoc, query, orderBy } from 'firebase/firestore';
 import { db } from '../firebase';
 import AppNavbar from './AppNavbar.vue';
 import AppFooter from './AppFooter.vue';
@@ -145,7 +145,8 @@ export default {
   methods: {
     async fetchInventory() {
       try {
-        const querySnapshot = await getDocs(collection(db, "inventory"));
+        const q = query(collection(db, "inventory"), orderBy("modifiedAt", "desc"));
+        const querySnapshot = await getDocs(q);
         this.inventory = querySnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       } catch (error) {
         alert("Błąd przy pobieraniu inwentarza");
