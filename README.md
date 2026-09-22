@@ -38,8 +38,51 @@ Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (`vue-router
 
 ## Zrzuty ekranu
 
+<p align="center">
+  <img src="docs/screenshots/inventory-admin.png" alt="Inwentarz (Admin)">
+  <br>
+  <em>Rysunek 1: Główny panel inwentarza w widoku Administratora z pełnymi operacjami CRUD i historią zmian.</em>
+</p>
 
+<br>
 
+<p align="center">
+  <img src="docs/screenshots/inventory-user.png" alt="Inwentarz (User)">
+  <br>
+  <em>Rysunek 2: Tabela asortymentu w widoku Użytkownika z ograniczonymi uprawnieniami i filtrowaniem.</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="docs/screenshots/add-item.png" alt="Dodawanie rekordu">
+  <br>
+  <em>Rysunek 3: Formularz dodawania nowego przedmiotu z wyborem kategorii, źródła oraz linku do faktury.</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="docs/screenshots/users.png" alt="Zarządzanie użytkownikami">
+  <br>
+  <em>Rysunek 4: Panel zarządzania kontami użytkowników oraz weryfikacji przypisanych ról.</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="docs/screenshots/categories.png" alt="Zarządzanie kategoriami">
+  <br>
+  <em>Rysunek 5: Moduł konfiguracji i edycji kategorii asortymentu.</em>
+</p>
+
+<br>
+
+<p align="center">
+  <img src="docs/screenshots/sources.png" alt="Zarządzanie źródłami">
+  <br>
+  <em>Rysunek 6: Panel definiowania i zarządzania źródłami pochodzenia sprzętu.</em>
+</p>
 
 ---
 
