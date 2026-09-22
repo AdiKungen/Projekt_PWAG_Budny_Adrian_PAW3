@@ -49,7 +49,7 @@ Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (`vue-router
 <p align="center">
   <img src="docs/screenshots/inventory-user.png" alt="Inwentarz (User)">
   <br>
-  <em>Rysunek 2: Tabela asortymentu w widoku Użytkownika z ograniczonymi uprawnieniami i filtrowaniem.</em>
+  <em>Rysunek 2: Główny panel inwentarza w widoku Użytkownika z ograniczonymi uprawnieniami i filtrowaniem.</em>
 </p>
 
 <br>
@@ -73,7 +73,7 @@ Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (`vue-router
 <p align="center">
   <img src="docs/screenshots/categories.png" alt="Zarządzanie kategoriami">
   <br>
-  <em>Rysunek 5: Moduł konfiguracji i edycji kategorii asortymentu.</em>
+  <em>Rysunek 5: Panel definiowania i zarządzania kategoriami asortymentu.</em>
 </p>
 
 <br>
