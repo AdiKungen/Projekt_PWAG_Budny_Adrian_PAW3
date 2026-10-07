@@ -94,7 +94,7 @@ Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (`vue-router
 * **Backend & Autoryzacja:** [Firebase Authentication](https://firebase.google.com/docs/auth) (uwierzytelnianie e-mail/hasło, sesje tokenowe)
 * **Baza danych:** [Cloud Firestore](https://firebase.google.com/docs/firestore) (nierelacyjna baza dokumentowa NoSQL)
 * **Hosting produkcyjny:** [Firebase Hosting](https://firebase.google.com/docs/hosting) (globalna sieć CDN, obsługa routingu SPA)
-* **Narzędzia developerskie:** Vue CLI, Babel, Node.js, npm, Firebase CLI
+* **Narzędzia developerskie:** [npm](https://www.npmjs.com/), Vue CLI, Babel, Node.js, Firebase CLI
 
 ---
 
