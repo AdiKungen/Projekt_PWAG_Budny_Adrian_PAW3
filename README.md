@@ -103,8 +103,8 @@ Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (`vue-router
 ### Wymagania
 
 - Zainstalowane środowisko [Node.js](https://nodejs.org/) (wersja 16.x lub nowsza)
-- Menedżer pakietów **npm** (dołączony do Node.js).
-- Utworzony projekt w [Google Firebase Console](https://console.firebase.google.com/) z włączonymi usługami **Firestore Database** oraz **Authentication** (Email/Password).
+- Menedżer pakietów **npm** (dołączony do Node.js)
+- Utworzony projekt w [Google Firebase Console](https://console.firebase.google.com/) z włączonymi usługami **Firestore Database** oraz **Authentication** (Email/Password)
 
 ### Instrukcja
 
