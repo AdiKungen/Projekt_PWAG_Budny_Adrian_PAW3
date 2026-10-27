@@ -1,4 +1,4 @@
-# System Zarządzania Inwentarzem (Shop Inventory Manager)
+# System Zarządzania Inwentarzem (_ang._ Shop Inventory Manager)
 
 Aplikacja webowa typu SPA (Single Page Application) stworzona przy użyciu frameworka **Vue.js 3** oraz platformy **Google Firebase**. System umożliwia ewidencjonowanie sprzętu, zarządzanie stanem magazynowym, kategoryzację, podpinanie dokumentacji zewnętrznej (faktur/gwarancji) oraz precyzyjną kontrolę dostępu z podziałem na role użytkowników.
 
