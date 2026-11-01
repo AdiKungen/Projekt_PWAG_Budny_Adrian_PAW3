@@ -18,7 +18,7 @@ Projekt został wykonany w ramach zajęć „Projektowanie webowych aplikacji gr
 
 Aplikacja została zaprojektowana z myślą o prostym i przejrzystym zarządzaniu zasobami technicznymi i asortymentem. Rozwiązuje problem rozproszonych danych o sprzęcie poprzez centralizację informacji o modelach, cenach, źródłach pochodzenia, statusie sprawności oraz odnośnikach do dokumentacji (np. skanów faktur na zewnętrznych dyskach).
 
-Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (`vue-router navigation guards`) gwarantują, że kluczowe moduły edycyjne i zarządzanie kontami są dostępne wyłącznie dla uprawnionych administratorów.
+Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (vue-router navigation guards) gwarantują, że kluczowe moduły edycyjne i zarządzanie kontami są dostępne wyłącznie dla uprawnionych administratorów.
 
 ---
 
