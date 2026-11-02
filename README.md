@@ -31,7 +31,7 @@ Autoryzacja oparta o Firebase Auth oraz mechanizm strażników tras (`vue-router
   * **Użytkownik (User):** Przeglądanie i filtrowanie stanu inwentarza.
   * **Administrator (Admin):** Pełny dostęp do edycji bazy, zarządzania kategoriami, źródłami i kontami użytkowników.
 * **Filtrowanie i wyszukiwarka:** Dynamiczne przeszukiwanie asortymentu po nazwie oraz filtrowanie według kategorii.
-* **Śledzenie historii zmian:** Automatyczny zapis adresu email użytkownika wprowadzającego modyfikacje oraz znacznik czasu (serverTimestamp).
+* **Śledzenie historii zmian:** Automatyczny zapis adresu email użytkownika wprowadzającego modyfikacje oraz znacznik czasu (`serverTimestamp`).
 * **Modułowa architektura:** Reużywalne komponenty nawigacji i stopki (`AppNavbar`, `AppFooter`) dla spójnego interfejsu.
 
 ---
